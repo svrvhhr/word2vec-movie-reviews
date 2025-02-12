@@ -40,7 +40,7 @@ def preprocess_text(text):
 Le modèle est entraîné en utilisant la méthode `Word2Vec` de Gensim :
 
 ```python
-model = Word2Vec(sentences=corpus, vector_size=100, window=5, min_count=2, workers=4, epochs=10)
+model = Word2Vec(sentences=corpus, vector_size=100, window=5, min_count=5, sg=1 , negative =15 )
 ```
 
 ### Paramètres utilisés
